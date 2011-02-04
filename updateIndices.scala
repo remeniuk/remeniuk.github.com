@@ -17,7 +17,7 @@ def updateIndex(currentDir: String = ""):Unit = {
 				<h1>Maven Repository remeniuk@github</h1>
 				<ul>{loc.listFiles.filterNot(file => IGNORE_FILE.contains(file.getName))
 				.map(file => <li><a href={"http://remeniuk.github.com" + currentDir +  "/" + file.getName}>{
-				(if(file.isDirectory) "DIRECTORY -- " else "FILE -- ") + file.getName}</a></li>)}</ul> 
+				(if(file.isDirectory) "/" else "") + file.getName}</a></li>)}</ul> 
 			</html>) toString
 		)
 		out.close
