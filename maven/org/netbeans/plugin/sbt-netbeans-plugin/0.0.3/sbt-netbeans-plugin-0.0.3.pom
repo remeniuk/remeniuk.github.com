@@ -4,7 +4,7 @@
     <groupId>org.netbeans.plugin</groupId>
     <artifactId>sbt-netbeans-plugin</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
