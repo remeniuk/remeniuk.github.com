@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.netbeans</groupId>
+    <artifactId>sbt-netbeans-plugin_2.8.1</artifactId>
+    <packaging>jar</packaging>
+    <version>0.0.8_0.9.8</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-tools.sbt</groupId>
+            <artifactId>sbt_2.8.1</artifactId>
+            <version>0.9.8</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalaz</groupId>
+            <artifactId>scalaz-core_2.8.1</artifactId>
+            <version>6.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>ScalaToolsMaven2SnapshotsRepository</id>
+            <name>Scala-Tools Maven2 Snapshots Repository</name>
+            <url>http://scala-tools.org/repo-snapshots/</url>
+        </repository>
+        <repository>
+            <id>ScalaToolsMaven2Repository</id>
+            <name>Scala-Tools Maven2 Repository</name>
+            <url>http://scala-tools.org/repo-releases/</url>
+        </repository>
+    </repositories>
+</project>
