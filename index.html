@@ -3,10 +3,13 @@
 <html>
 <head>
 
-    <script>
-        var urlMap = {
+</head>
+<body>
+
+<script>
+    var urlMap = {
 'http://remeniuk.github.com/blog/software-development/getting-started-with-crm': 'http://remeniuk.posterous.com/getting-started-with-crm',
-'http://remeniuk.github.com/blog/software-development/3-practical-advices-to-survive-on-the-maintenance-project': http://remeniuk.posterous.com/3-practical-advices-to-survive-on-the-mainten
+'http://remeniuk.github.com/blog/software-development/3-practical-advices-to-survive-on-the-maintenance-project': 'http://remeniuk.posterous.com/3-practical-advices-to-survive-on-the-mainten',
 'http://remeniuk.github.com/blog/software-development/in-box-sca-with-spring-for-home-made-crm': 'http://remeniuk.posterous.com/in-box-sca-with-spring-for-home-made-crm',
 'http://remeniuk.github.com/blog/software-development/growing-own-managers-to-build-a-strong-corporate-culture': 'http://remeniuk.posterous.com/growing-own-managers-to-build-a-strong-corpor',
 'http://remeniuk.github.com/blog/software-development/the-second-life-of-aop': 'http://remeniuk.posterous.com/the-second-life-of-aop',
@@ -51,20 +54,19 @@
 'http://remeniuk.github.com/blog/software-development/akka-2-x-roadmap-has-been-posted': 'http://remeniuk.posterous.com/akka-2x-roadmap-has-been-posted',
 'http://remeniuk.github.com/blog/software-development/building-for-different-environments-with-sbt': 'http://remeniuk.posterous.com/building-for-different-environments-with-sbt',
 'http://remeniuk.github.com/blog/software-development/deploying-to-remote-glassfish-from-sbt': 'http://remeniuk.posterous.com/deploying-to-remote-glassfish-from-sbt-32374'
-        }
+    }
 
-        var currentLoc = window.location
-        var newLoc = urlMap[currentLoc]
-        if(newLoc != undefined) {
-            alert(newLoc)
-            window.location = newLoc
-        } else {
-            alert('http://remeniuk.posterous.com/')
-            window.location = 'http://remeniuk.posterous.com/'
-        }
-    </script>
+    var currentLoc = window.location
+    var newLoc = urlMap[currentLoc]
+    if(newLoc != undefined) {
+        alert(newLoc)
+        window.location = newLoc
+    } else {
+        alert('http://remeniuk.posterous.com/')
+        window.location = 'http://remeniuk.posterous.com/'
+    }
+</script>
 
-</head>
-<body>
+
 </body>
 </html>
