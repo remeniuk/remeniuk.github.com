@@ -56,8 +56,10 @@
         var currentLoc = window.location
         var newLoc = urlMap[currentLoc]
         if(newLoc != undefined) {
+            alert(newLoc)
             window.location = newLoc
         } else {
+            alert('http://remeniuk.posterous.com/')
             window.location = 'http://remeniuk.posterous.com/'
         }
     </script>
