@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+</head>
+<body>
+
+<script>
+    var urlMap = {
+'http://remeniuk.github.com/blog/software-development/getting-started-with-crm': 'http://remeniuk.posterous.com/getting-started-with-crm',
+'http://remeniuk.github.com/blog/software-development/3-practical-advices-to-survive-on-the-maintenance-project': 'http://remeniuk.posterous.com/3-practical-advices-to-survive-on-the-mainten',
+'http://remeniuk.github.com/blog/software-development/in-box-sca-with-spring-for-home-made-crm': 'http://remeniuk.posterous.com/in-box-sca-with-spring-for-home-made-crm',
+'http://remeniuk.github.com/blog/software-development/growing-own-managers-to-build-a-strong-corporate-culture': 'http://remeniuk.posterous.com/growing-own-managers-to-build-a-strong-corpor',
+'http://remeniuk.github.com/blog/software-development/the-second-life-of-aop': 'http://remeniuk.posterous.com/the-second-life-of-aop',
+'http://remeniuk.github.com/blog/software-development/getting-valuable-customer-data-from-social-networks': 'http://remeniuk.posterous.com/getting-valuable-customer-data-from-social-ne',
+'http://remeniuk.github.com/blog/software-development/aspects-in-uml': 'http://remeniuk.posterous.com/aspects-in-uml',
+'http://remeniuk.github.com/blog/software-development/basic-toolkit-for-building-a-restful-soa': 'http://remeniuk.posterous.com/basic-toolkit-for-building-a-restful-soa',
+'http://remeniuk.github.com/blog/software-development/regular-delivery-with-hudson': 'http://remeniuk.posterous.com/regular-delivery-with-hudson',
+'http://remeniuk.github.com/blog/software-development/3-reasons-to-stay-in-a-big-company': 'http://remeniuk.posterous.com/3-reasons-to-work-in-a-big-company',
+'http://remeniuk.github.com/blog/software-development/restful-orchestration-with-jopera': 'http://remeniuk.posterous.com/restful-orchestration-with-jopera',
+'http://remeniuk.github.com/blog/software-development/the-new-form-of-paranoid-programming': 'http://remeniuk.posterous.com/the-new-form-of-paranoid-programming',
+'http://remeniuk.github.com/blog/software-development/internal-crowdsourcing-enterprise-edition': 'http://remeniuk.posterous.com/internal-crowdsourcing-enterprise-edition',
+'http://remeniuk.github.com/blog/software-development/what-does-google-need-buzz-for': 'http://remeniuk.posterous.com/what-does-google-need-buzz-for',
+'http://remeniuk.github.com/blog/software-development/using-ibatis-3-0-with-scala': 'http://remeniuk.posterous.com/using-ibatis-30-with-scala',
+'http://remeniuk.github.com/blog/software-development/jersey-rest-services-for-scala': 'http://remeniuk.posterous.com/implementing-jersey-rest-services-in-scala',
+'http://remeniuk.github.com/blog/software-development/rapid-development-with-lombok': 'http://remeniuk.posterous.com/rapid-development-with-lombok',
+'http://remeniuk.github.com/blog/software-development/rules-of-falling-interest': 'http://remeniuk.posterous.com/rules-of-falling-interest',
+'http://remeniuk.github.com/blog/software-development/kandash-pre-alfa': 'http://remeniuk.posterous.com/kandash-pre-alfa-version-01-is-available',
+'http://remeniuk.github.com/blog/software-development/stored-javascript-in-mongo': 'http://remeniuk.posterous.com/effective-stored-javascript-in-mongodb',
+'http://remeniuk.github.com/blog/software-development/flexible-load-balancing-with-akka-in-scala': 'http://remeniuk.posterous.com/flexible-load-balancing-with-akka-in-scala',
+'http://remeniuk.github.com/blog/software-development/kandash-project-v-0-3-is-now-available': 'http://remeniuk.posterous.com/kandash-project-v-03-is-now-available',
+'http://remeniuk.github.com/blog/software-development/sbt-falling-in-love-again': 'http://remeniuk.posterous.com/sbt-falling-in-love-again',
+'http://remeniuk.github.com/blog/software-development/time-management-rly': 'http://remeniuk.posterous.com/time-management-rly',
+'http://remeniuk.github.com/blog/software-development/building-comet-applications-with-redis-pubsub-atmosphere-and-akka': 'http://remeniuk.posterous.com/building-comet-applications-with-redis-pubsub',
+'http://remeniuk.github.com/blog/software-development/o2-germany-bic-ndc-presentation-of-the-team': 'http://remeniuk.posterous.com/o2-germany-bic-ndc-presentation-of-the-team',
+'http://remeniuk.github.com/blog/software-development/the-joy-and-pains-of-lifting': 'http://remeniuk.posterous.com/the-joy-and-pain-from-lifting',
+'http://remeniuk.github.com/blog/software-development/fault-tolerance-primitives-in-scala-links-and-traps': 'http://remeniuk.posterous.com/fault-tolerance-primitives-in-scala-links-and',
+'http://remeniuk.github.com/blog/software-development/node-js-and-scala-without-mediators': 'http://remeniuk.posterous.com/nodejs-and-scala-without-mediators',
+'http://remeniuk.github.com/blog/software-development/find-the-difference-game-scalatra-vs-cirmumflex': 'http://remeniuk.posterous.com/find-the-difference-game-scalatra-vs-cirmumfl',
+'http://remeniuk.github.com/blog/software-development/even-simpler-scalability-with-akka-through-registryactor': 'http://remeniuk.posterous.com/even-simpler-scalability-with-akka-through-re',
+'http://remeniuk.github.com/blog/software-development/container-managed-actor-dispatchers': 'http://remeniuk.posterous.com/container-managed-actor-dispatchers',
+'http://remeniuk.github.com/blog/software-development/resolving-dependencies-in-sbt-with-sbt-library-resolver': 'http://remeniuk.posterous.com/resolving-unmanaged-dependencies-in-sbt',
+'http://remeniuk.github.com/blog/software-development/scala-belarus': 'http://remeniuk.posterous.com/scala-enthusiasts-belarus',
+'http://remeniuk.github.com/blog/software-development/from-sbt-to-maven-in-one-move': 'http://remeniuk.posterous.com/mavenizing-the-sbt-project-in-one-move',
+'http://remeniuk.github.com/blog/software-development/the-santa-claus-problem': 'http://remeniuk.posterous.com/the-santa-claus-problem',
+'http://remeniuk.github.com/blog/software-development/tic-tac-toe-api-with-phantom-types': 'http://remeniuk.posterous.com/tic-tac-toe-api-with-phantom-types',
+'http://remeniuk.github.com/blog/software-development/guide-to-using-sbt-in-netbeans-with-sbt-netbeans-plugin': 'http://remeniuk.posterous.com/guide-to-using-sbt-in-netbeans-with-sbt-netbe',
+'http://remeniuk.github.com/blog/software-development/scatter-gather-with-akka-dataflow': 'http://remeniuk.posterous.com/scatter-gather-with-akka-dataflow',
+'http://remeniuk.github.com/blog/software-development/scala-by-home-for-belarusian-scala-enthusiasts': 'http://remeniuk.posterous.com/scalaby-home-for-belarusian-scala-enthusiasts',
+'http://remeniuk.github.com/blog/software-development/algebraic-data-types-and-origami-patterns-in-scala': 'http://remeniuk.posterous.com/algebraic-data-types-and-origami-patterns-in',
+'http://remeniuk.github.com/blog/software-development/the-actors-school-best-practices-for-using-actors-in-scala': 'http://remeniuk.posterous.com/the-actors-school-best-practices-for-using-ac',
+'http://remeniuk.github.com/blog/software-development/effective-scala-programming-patterns': 'http://remeniuk.posterous.com/effective-scala-programming-patterns',
+'http://remeniuk.github.com/blog/software-development/akka-2-x-roadmap-has-been-posted': 'http://remeniuk.posterous.com/akka-2x-roadmap-has-been-posted',
+'http://remeniuk.github.com/blog/software-development/building-for-different-environments-with-sbt': 'http://remeniuk.posterous.com/building-for-different-environments-with-sbt',
+'http://remeniuk.github.com/blog/software-development/deploying-to-remote-glassfish-from-sbt': 'http://remeniuk.posterous.com/deploying-to-remote-glassfish-from-sbt-32374'
+    }
+
+    var currentLoc = window.location
+    var newLoc = urlMap[currentLoc]
+    if(newLoc != undefined) {
+        window.location = newLoc
+    } else {
+        window.location = 'http://remeniuk.posterous.com/'
+    }
+</script>
+
+
+</body>
+</html>
